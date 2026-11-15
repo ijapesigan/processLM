@@ -1,0 +1,52 @@
+---
+title: "processLM"
+author: "Ivan Jacob Agaloos Pesigan"
+output: rmarkdown::html_vignette
+bibliography: "vignettes.bib"
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @RCoreTeam-2026
+---
+
+<!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/vignettes-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+## Description
+
+Preprocessing helper functions for the `lm` object in R [@RCoreTeam-2026]:
+sample moments, standardized and selectively standardized
+partial regression slopes,
+R-squared and adjusted R-squared,
+semipartial and partial correlations,
+Cohen's f-squared,
+and differences of slopes.
+
+## Installation
+
+You can install the development version of `processLM` from
+[GitHub](https://github.com/ijapesigan/processLM) with:
+
+```r
+if (!require("pak")) install.packages("pak")
+pak::pkg_install("ijapesigan/processLM")
+```
+
+## More Information
+
+See
+[GitHub Pages](https://ijapesigan.github.io/processLM)
+for package documentation.
+
+## References

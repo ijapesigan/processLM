@@ -1,0 +1,39 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "processLM" in publications use:'
+type: software
+license: MIT
+title: 'processLM: Process lm Objects'
+version: 0.0.10
+abstract: 'Preprocessing helper functions for the ''lm'' object: sample moments, standardized
+  and selectively standardized partial regression slopes, R-squared and adjusted R-squared,
+  semipartial and partial correlations, Cohen''s f-squared, differences of slopes,
+  and Monte Carlo draws of the model-implied covariance matrices. The internal functions
+  have no input checks and are copied by other projects.'
+authors:
+- family-names: Pesigan
+  given-names: Ivan Jacob Agaloos
+  email: r.jeksterslab@gmail.com
+  orcid: https://orcid.org/0000-0003-4818-8420
+preferred-citation:
+  type: manual
+  title: 'processLM: Process lm Objects'
+  authors:
+  - family-names: Pesigan
+    given-names: Ivan Jacob Agaloos
+    email: r.jeksterslab@gmail.com
+    orcid: https://orcid.org/0000-0003-4818-8420
+  year: '2026'
+  notes: R package version 0.0.10
+repository-code: https://github.com/ijapesigan/processLM
+url: https://ijapesigan.github.io/processLM/
+contact:
+- family-names: Pesigan
+  given-names: Ivan Jacob Agaloos
+  email: r.jeksterslab@gmail.com
+  orcid: https://orcid.org/0000-0003-4818-8420
+
