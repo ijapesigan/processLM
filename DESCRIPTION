@@ -1,0 +1,34 @@
+Package: processLM
+Title: Process lm Objects
+Version: 0.0.10
+Authors@R: 
+    person(given = "Ivan Jacob Agaloos",
+           family = "Pesigan",
+           role = c("aut", "cre", "cph"),
+           email = "r.jeksterslab@gmail.com",
+           comment = c(ORCID = "0000-0003-4818-8420"))
+Description: Preprocessing helper functions for the 'lm' object:
+    sample moments, standardized and selectively standardized partial
+    regression slopes, R-squared and adjusted R-squared, semipartial
+    and partial correlations, Cohen's f-squared, differences of slopes,
+    and Monte Carlo draws of the model-implied covariance matrices.
+    The internal functions have no input checks and are copied by other
+    projects.
+URL: https://github.com/ijapesigan/processLM,
+        https://ijapesigan.github.io/processLM/
+BugReports: https://github.com/ijapesigan/processLM/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 3.5.0)
+Imports: Rcpp, stats, utils
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.1.9000
+NeedsCompilation: yes
+Packaged: 2026-11-15 05:57:55 UTC; root
+Author: Ivan Jacob Agaloos Pesigan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4818-8420>)
+Maintainer: Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>
