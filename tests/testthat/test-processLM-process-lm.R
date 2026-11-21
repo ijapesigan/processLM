@@ -107,8 +107,15 @@ lapply(
         )
         testthat::expect_equal(object = out$p, expected = 1)
         testthat::expect_equal(object = out$q, expected = 3)
-        testthat::expect_true(object = is.na(x = out$scor))
-        testthat::expect_true(object = is.na(x = out$pcor))
+        testthat::expect_equal(
+          object = out$scor,
+          expected = out$betastar
+        )
+        testthat::expect_equal(
+          object = unname(obj = out$pcor),
+          expected = unname(obj = out$rsq[1])
+        )
+        testthat::expect_named(object = out$pcor, expected = "NARTIC")
         testthat::expect_true(object = is.na(x = out$dif_beta))
         testthat::expect_true(object = is.na(x = out$dif_betastar))
         testthat::expect_true(object = is.na(x = out$dif_idx))

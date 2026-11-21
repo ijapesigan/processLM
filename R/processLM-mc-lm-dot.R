@@ -22,7 +22,10 @@
 #'   Matrix decomposition of `scale`,
 #'   `"chol"`, `"eigen"`, or `"svd"`.
 #' @param pd Logical.
-#'   If `pd = TRUE`, check that `scale` is positive definite using `tol`.
+#'   If `pd = TRUE`, check that `scale` is positive semidefinite using `tol`
+#'   (a singular matrix, with a zero eigenvalue, passes).
+#'   If `decomposition = "chol"` and the Cholesky decomposition fails,
+#'   the eigenvalue decomposition is used.
 #' @param tol Numeric.
 #'   Tolerance used for `pd`.
 #' @param iter Positive integer.
@@ -49,7 +52,7 @@
 #'     \eqn{\operatorname{vech} \left( \boldsymbol{\Sigma} \right)} (rows).}
 #' }
 #'
-#' @family Process LM Functions
+#' @family Process lm Functions
 #' @keywords processLM mc internal
 #' @noRd
 .MCLM <- function(scale,
