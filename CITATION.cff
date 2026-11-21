@@ -8,7 +8,7 @@ message: 'To cite package "processLM" in publications use:'
 type: software
 license: MIT
 title: 'processLM: Process lm Objects'
-version: 0.0.10
+version: 0.0.11
 abstract: 'Preprocessing helper functions for the ''lm'' object: sample moments, standardized
   and selectively standardized partial regression slopes, R-squared and adjusted R-squared,
   semipartial and partial correlations, Cohen''s f-squared, differences of slopes,
@@ -28,7 +28,7 @@ preferred-citation:
     email: r.jeksterslab@gmail.com
     orcid: https://orcid.org/0000-0003-4818-8420
   year: '2026'
-  notes: R package version 0.0.10
+  notes: R package version 0.0.11
 repository-code: https://github.com/ijapesigan/processLM
 url: https://ijapesigan.github.io/processLM/
 contact:

@@ -95,6 +95,31 @@ lapply(
         }
       )
       testthat::test_that(
+        desc = paste(text, "singular scale with chol"),
+        code = {
+          singular <- scale
+          singular[1, ] <- 0
+          singular[, 1] <- 0
+          out <- processLM:::.MCLM(
+            scale = singular,
+            location = location,
+            p = 2,
+            R = 20,
+            decomposition = "chol",
+            pd = TRUE,
+            seed = 5
+          )
+          testthat::expect_equal(
+            object = dim(x = out$thetahatstar),
+            expected = c(20, 6)
+          )
+          testthat::expect_equal(
+            object = unname(obj = out$thetahatstar[, 1]),
+            expected = rep(x = location[1], times = 20)
+          )
+        }
+      )
+      testthat::test_that(
         desc = paste(text, "errors"),
         code = {
           testthat::expect_error(

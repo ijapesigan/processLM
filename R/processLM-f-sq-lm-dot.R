@@ -7,7 +7,7 @@
 #' @return Returns a named numeric vector:
 #'   `fsq` followed by the local \eqn{f^2} of each regressor.
 #'
-#' @family Process LM Functions
+#' @family Process lm Functions
 #' @keywords processLM internal
 #' @noRd
 .FSqLM <- function(lm_process) {

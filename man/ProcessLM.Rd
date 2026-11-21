@@ -47,11 +47,13 @@ of the covariance matrix of the model matrix.}
 \item{theta}{Parameters in the covariance structure,
 that is, \code{beta}, \code{sigmasq}, \code{vechsigmacapx}.}
 \item{betastar}{Vector of standardized regression slopes.}
-\item{scor}{Vector of semipatial correlations.}
-\item{pcor}{Vector of squared patial correlations.}
-\item{rsq}{Vector of multiple correlation coefficients
-(R-squared and adjusted R-squared).}
-\item{dif_beta}{Differences of partial regression slopes.}
+\item{scor}{Vector of semipartial correlations
+(equal to \code{betastar} when \code{p = 1}).}
+\item{pcor}{Vector of squared partial correlations
+(equal to the R-squared when \code{p = 1}).}
+\item{rsq}{Vector of the R-squared and the adjusted R-squared.}
+\item{dif_beta}{Differences of partial regression slopes
+(\code{NA} when \code{p = 1}).}
 \item{dif_betastar}{Differences of standardized
 partial regression slopes.}
 \item{dif_idx}{Differences index.}
