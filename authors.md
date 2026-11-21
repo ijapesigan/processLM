@@ -11,11 +11,11 @@ Source:
 [`inst/CITATION`](https://github.com/ijapesigan/processLM/blob/main/inst/CITATION)
 
 Pesigan, I. J. A. (2026). processLM: Process lm Objects. R package
-version 0.0.10. https://github.com/ijapesigan/processLM
+version 0.0.11. https://github.com/ijapesigan/processLM
 
 @Manual{,\
   author = {Ivan Jacob Agaloos Pesigan},\
   title = {processLM: Process lm Objects},\
   year = {2026},\
-  note = {R package version 0.0.10},\
+  note = {R package version 0.0.11},\
 }

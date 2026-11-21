@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">processLM</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.10</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.11</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,17 +146,19 @@ that is, <code>beta</code>, <code>sigmasq</code>, <code>vechsigmacapx</code>.</p
 <dd><p>Vector of standardized regression slopes.</p></dd>
 
 <dt>scor</dt>
-<dd><p>Vector of semipatial correlations.</p></dd>
+<dd><p>Vector of semipartial correlations
+(equal to <code>betastar</code> when <code>p = 1</code>).</p></dd>
 
 <dt>pcor</dt>
-<dd><p>Vector of squared patial correlations.</p></dd>
+<dd><p>Vector of squared partial correlations
+(equal to the R-squared when <code>p = 1</code>).</p></dd>
 
 <dt>rsq</dt>
-<dd><p>Vector of multiple correlation coefficients
-(R-squared and adjusted R-squared).</p></dd>
+<dd><p>Vector of the R-squared and the adjusted R-squared.</p></dd>
 
 <dt>dif_beta</dt>
-<dd><p>Differences of partial regression slopes.</p></dd>
+<dd><p>Differences of partial regression slopes
+(<code>NA</code> when <code>p = 1</code>).</p></dd>
 
 <dt>dif_betastar</dt>
 <dd><p>Differences of standardized

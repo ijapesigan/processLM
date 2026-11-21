@@ -135,20 +135,20 @@ Returns a list with the following elements:
 
 - scor:
 
-  Vector of semipatial correlations.
+  Vector of semipartial correlations (equal to `betastar` when `p = 1`).
 
 - pcor:
 
-  Vector of squared patial correlations.
+  Vector of squared partial correlations (equal to the R-squared when
+  `p = 1`).
 
 - rsq:
 
-  Vector of multiple correlation coefficients (R-squared and adjusted
-  R-squared).
+  Vector of the R-squared and the adjusted R-squared.
 
 - dif_beta:
 
-  Differences of partial regression slopes.
+  Differences of partial regression slopes (`NA` when `p = 1`).
 
 - dif_betastar:
 

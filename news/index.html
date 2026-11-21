@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">processLM</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.10</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.11</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,22 @@
       <small>Source: <a href="https://github.com/ijapesigan/processLM/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.11" id="processlm-0011">processLM 0.0.11<a class="anchor" aria-label="anchor" href="#processlm-0011"></a></h2>
+<div class="section level3">
+<h3 id="beta-chain-audit-0-0-11">Beta chain audit<a class="anchor" aria-label="anchor" href="#beta-chain-audit-0-0-11"></a></h3>
+<ul><li>Copies refreshed byte for byte from the sources’ pushed state: <code>linearAlgebra</code> 0.0.5 (<code>052db63</code>: <code>.DMat()</code>, <code>.PInvDmat()</code>, <code>.Vec()</code>, <code>.Vech()</code>; new <code>.TestPositiveSemiDefinite()</code>), <code>randomGaussian</code> (<code>da756e4</code>: <code>.RandomGaussianSVD()</code>), <code>rhoMatrix</code> 0.0.3 (<code>32c565b</code>: <code>.RhoofSigma()</code>), <code>semmcci</code> 1.1.7 (<code>c4d13a2</code>: <code>.ThetaHatStar()</code>, <code>.ThetaHatStarScreen()</code>).</li>
+<li>
+<code>.TestPositiveDefinite()</code> is removed: nothing calls it after the <code>semmcci</code> refresh.</li>
+<li>
+<code>.MCLM()</code>: <code>pd = TRUE</code> checks that <code>scale</code> is positive semidefinite (a singular <code>scale</code> passes), and <code>decomposition = "chol"</code> falls back to the eigenvalue decomposition when <code><a href="https://rdrr.io/r/base/chol.html" class="external-link">chol()</a></code> fails (both from <code>semmcci</code> 1.1.7).</li>
+<li>
+<code><a href="../reference/ProcessLM.html">ProcessLM()</a></code>: with one regressor (<code>p = 1</code>), <code>scor</code> and <code>pcor</code> are computed (equal to <code>betastar</code> and the R-squared) instead of <code>NA</code>; <code>dif_beta</code>, <code>dif_betastar</code>, and <code>dif_idx</code> stay <code>NA</code>.</li>
+<li>
+<code>.Dif()</code> uses vectorized indexing (same results).</li>
+<li>Documentation: typos (“semipartial”, “partial”), <code>rsq</code>, <code>pd</code>, and one <code>@family</code> name.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.10" id="processlm-0010">processLM 0.0.10<a class="anchor" aria-label="anchor" href="#processlm-0010"></a></h2>
 <div class="section level3">

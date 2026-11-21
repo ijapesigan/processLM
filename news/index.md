@@ -1,5 +1,30 @@
 # Changelog
 
+## processLM 0.0.11
+
+### Beta chain audit
+
+- Copies refreshed byte for byte from the sources’ pushed state:
+  `linearAlgebra` 0.0.5 (`052db63`: `.DMat()`, `.PInvDmat()`, `.Vec()`,
+  `.Vech()`; new `.TestPositiveSemiDefinite()`), `randomGaussian`
+  (`da756e4`: `.RandomGaussianSVD()`), `rhoMatrix` 0.0.3 (`32c565b`:
+  `.RhoofSigma()`), `semmcci` 1.1.7 (`c4d13a2`: `.ThetaHatStar()`,
+  `.ThetaHatStarScreen()`).
+- `.TestPositiveDefinite()` is removed: nothing calls it after the
+  `semmcci` refresh.
+- `.MCLM()`: `pd = TRUE` checks that `scale` is positive semidefinite (a
+  singular `scale` passes), and `decomposition = "chol"` falls back to
+  the eigenvalue decomposition when
+  [`chol()`](https://rdrr.io/r/base/chol.html) fails (both from
+  `semmcci` 1.1.7).
+- [`ProcessLM()`](https://ijapesigan.github.io/processLM/reference/ProcessLM.md):
+  with one regressor (`p = 1`), `scor` and `pcor` are computed (equal to
+  `betastar` and the R-squared) instead of `NA`; `dif_beta`,
+  `dif_betastar`, and `dif_idx` stay `NA`.
+- `.Dif()` uses vectorized indexing (same results).
+- Documentation: typos (“semipartial”, “partial”), `rsq`, `pd`, and one
+  `@family` name.
+
 ## processLM 0.0.10
 
 ### Template
