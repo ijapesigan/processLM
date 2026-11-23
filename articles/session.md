@@ -1,12 +1,12 @@
 # processLM: Session
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(``package ``=`` ``"processLM"``)`
+[`library`](https://rdrr.io/r/base/library.html)`(`[`processLM`](https://github.com/ijapesigan/processLM)`)`
 
 ## Session
 
 \
-`utils``::`[`sessionInfo`](https://rdrr.io/r/utils/sessionInfo.html)`(``)`\
+[`sessionInfo`](https://rdrr.io/r/utils/sessionInfo.html)`(``)`\
 `#> R version 4.6.2 (2026-10-29)`\
 `#> Platform: x86_64-pc-linux-gnu`\
 `#> Running under: Ubuntu 26.04.1 LTS`\
@@ -40,7 +40,7 @@
 ## Packages
 
 \
-`utils``::`[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
+[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
 `#>                   Package             Version     `\
 `#> processLM         "processLM"         "0.0.11"    `\
 `#> rProject          "rProject"          "0.0.76"    `\
@@ -468,7 +468,7 @@
     #> Socket(s):                               1
     #> Stepping:                                0
     #> Frequency boost:                         enabled
-    #> CPU(s) scaling MHz:                      40%
+    #> CPU(s) scaling MHz:                      43%
     #> CPU max MHz:                             5060.9761
     #> CPU min MHz:                             1219.5129
     #> BogoMIPS:                                4990.62
@@ -503,6 +503,6 @@
 ## Memory
 
     #>                total        used        free      shared  buff/cache   available
-    #> Mem:            44Gi       2.6Gi        39Gi        13Mi       2.6Gi        41Gi
+    #> Mem:            44Gi       2.7Gi        39Gi        13Mi       2.9Gi        41Gi
     #> Swap:           22Gi          0B        22Gi
-    #> Total:          66Gi       2.6Gi        62Gi
+    #> Total:          66Gi       2.7Gi        61Gi
