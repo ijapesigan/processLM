@@ -1,12 +1,12 @@
 # processLM: Session
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`processLM`](https://github.com/ijapesigan/processLM)`)`
+[`library`](https://rdrr.io/r/base/library.html)`(``package ``=`` ``"processLM"``)`
 
 ## Session
 
 \
-[`sessionInfo`](https://rdrr.io/r/utils/sessionInfo.html)`(``)`\
+`utils``::`[`sessionInfo`](https://rdrr.io/r/utils/sessionInfo.html)`(``)`\
 `#> R version 4.6.2 (2026-10-29)`\
 `#> Platform: x86_64-pc-linux-gnu`\
 `#> Running under: Ubuntu 26.04.1 LTS`\
@@ -34,16 +34,16 @@
 `#> `\
 `#> loaded via a namespace (and not attached):`\
 `#>  [1] compiler_4.6.2  cli_3.6.6.9000  tools_4.6.2     otel_0.3.0     `\
-`#>  [5] Rcpp_1.1.2      rProject_0.0.80 knitr_1.52      xfun_0.62      `\
+`#>  [5] Rcpp_1.1.2      rProject_0.0.81 knitr_1.52      xfun_0.62      `\
 `#>  [9] rlang_1.3.0     evaluate_1.0.5`
 
 ## Packages
 
 \
-[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
+`utils``::`[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
 `#>                   Package             Version     `\
 `#> processLM         "processLM"         "0.0.11"    `\
-`#> rProject          "rProject"          "0.0.80"    `\
+`#> rProject          "rProject"          "0.0.81"    `\
 `#> abind             "abind"             "1.4-8"     `\
 `#> Amelia            "Amelia"            "1.8.3"     `\
 `#> arm               "arm"               "1.15-4"    `\
@@ -342,7 +342,7 @@
 `#> roxygen2          "roxygen2"          "8.1.1.9000"`\
 `#> rpf               "rpf"               "1.0.15"    `\
 `#> RPostgres         "RPostgres"         "1.4.10"    `\
-`#> rProject          "rProject"          "0.0.79"    `\
+`#> rProject          "rProject"          "0.0.81"    `\
 `#> rprojroot         "rprojroot"         "2.1.1"     `\
 `#> rsample           "rsample"           "1.3.2"     `\
 `#> RSQLite           "RSQLite"           "3.53.3"    `\
@@ -469,7 +469,7 @@
     #> Socket(s):                               1
     #> Stepping:                                0
     #> Frequency boost:                         enabled
-    #> CPU(s) scaling MHz:                      43%
+    #> CPU(s) scaling MHz:                      49%
     #> CPU max MHz:                             5060.9761
     #> CPU min MHz:                             1219.5129
     #> BogoMIPS:                                4990.62
@@ -504,6 +504,6 @@
 ## Memory
 
     #>                total        used        free      shared  buff/cache   available
-    #> Mem:            44Gi       3.1Gi        29Gi        13Mi        12Gi        41Gi
+    #> Mem:            44Gi       4.2Gi        14Gi        13Mi        26Gi        40Gi
     #> Swap:           22Gi          0B        22Gi
-    #> Total:          66Gi       3.1Gi        51Gi
+    #> Total:          66Gi       4.2Gi        36Gi
