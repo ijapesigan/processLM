@@ -30,7 +30,7 @@
 `#> [1] stats     graphics  grDevices utils     datasets  methods   base     `\
 `#> `\
 `#> other attached packages:`\
-`#> [1] processLM_0.0.11`\
+`#> [1] processLM_0.0.12`\
 `#> `\
 `#> loaded via a namespace (and not attached):`\
 `#>  [1] compiler_4.6.2  cli_3.6.6.9000  tools_4.6.2     otel_0.3.0     `\
@@ -42,7 +42,7 @@
 \
 `utils``::`[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
 `#>                   Package             Version     `\
-`#> processLM         "processLM"         "0.0.11"    `\
+`#> processLM         "processLM"         "0.0.12"    `\
 `#> rProject          "rProject"          "0.0.81"    `\
 `#> abind             "abind"             "1.4-8"     `\
 `#> Amelia            "Amelia"            "1.8.3"     `\
@@ -469,7 +469,7 @@
     #> Socket(s):                               1
     #> Stepping:                                0
     #> Frequency boost:                         enabled
-    #> CPU(s) scaling MHz:                      49%
+    #> CPU(s) scaling MHz:                      38%
     #> CPU max MHz:                             5060.9761
     #> CPU min MHz:                             1219.5129
     #> BogoMIPS:                                4990.62
@@ -504,6 +504,6 @@
 ## Memory
 
     #>                total        used        free      shared  buff/cache   available
-    #> Mem:            44Gi       4.2Gi        14Gi        13Mi        26Gi        40Gi
+    #> Mem:            44Gi       3.1Gi        29Gi        21Mi        12Gi        41Gi
     #> Swap:           22Gi          0B        22Gi
-    #> Total:          66Gi       4.2Gi        36Gi
+    #> Total:          66Gi       3.1Gi        51Gi
