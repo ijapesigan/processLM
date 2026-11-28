@@ -80,6 +80,24 @@ lapply(
           )
           testthat::expect_true(object = all(out$thetahatstar[, 3] > 0))
           testthat::expect_false(object = anyNA(x = out$vechsigmacap))
+          testthat::expect_null(
+            object = attr(x = out$thetahatstar, which = "screen")
+          )
+          testthat::expect_equal(
+            object = names(x = out$screen),
+            expected = c(
+              "requested", "retained", "rejected",
+              "redraws", "exhausted", "iter"
+            )
+          )
+          testthat::expect_true(object = out$screen[["rejected"]] > 0)
+          testthat::expect_true(
+            object = out$screen[["redraws"]] >= out$screen[["rejected"]]
+          )
+          testthat::expect_equal(
+            object = out$screen[["retained"]],
+            expected = nrow(x = out$thetahatstar)
+          )
           none <- processLM:::.MCLM(
             scale = wide,
             location = c(location[1:2], -50, location[4:6]),
@@ -91,6 +109,14 @@ lapply(
           testthat::expect_lt(
             object = nrow(x = none$thetahatstar),
             expected = 20
+          )
+          testthat::expect_equal(
+            object = none$screen[["exhausted"]],
+            expected = 20L - nrow(x = none$thetahatstar)
+          )
+          testthat::expect_equal(
+            object = none$screen[["requested"]],
+            expected = 20L
           )
         }
       )

@@ -1,3 +1,11 @@
+# processLM 0.0.12
+
+## Monte Carlo draw counts
+
+- `.MCLM()` returns `screen`, the counts of the screened draws (requested, retained, rejected, redraws, exhausted,
+  iter), from `semmcci` 1.1.7 (`1076264`: `.ThetaHatStarScreen()`, whose redraws use the same `pd` and `tol` as the
+  first pass). The draws are unchanged. For betaMC (`MC()`, `MCMI()`) and manBeta.
+
 # processLM 0.0.11
 
 ## Beta chain audit
